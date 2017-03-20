@@ -17,11 +17,15 @@
 	<div>
 		<ul>
 			<li th:each="file : ${files}">
-				<a th:href="${file}" th:text="${file}" />
-				<div th:if="${linktai}"><a th:href="${linktai}" th:text="${linktai}" /></div>				
+				<p><a th:href="${file}" th:text="${file}" /><br/></p>	
+				<p><a th:href="${link}" th:text="${link}" /><br/></p>
 			</li>
+<!-- 			<li th:each="link : ${list}"> --> -->
+<!-- 				<p><a th:href="${link}" th:text="${link}" /><br/></p>	 -->
+<!-- 		</li>  -->
 		</ul>
 	</div>
+	
 
 </body>
 </html>
